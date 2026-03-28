@@ -2,20 +2,20 @@
     <lightning-card title="Weather App">
         <div class="slds-p-around_medium">
             
-            <lightning-input 
-                label="Enter City" 
-                value={city} 
-                onchange={handleChange}>
-            </lightning-input>
+            <lightning-input label="Enter City" value={city} onchange={handleChange}></lightning-input>
             
-            <lightning-button 
-                label="Get Weather" 
-                onclick={getWeather}>
-            </lightning-button>
+            <lightning-button label="Get Weather" onclick={getWeather}></lightning-button>
 
-            <template if:true={result}>
-                <p><b>{result}</b></p>
+            <template if:true={weatherData}>
+                <div class="slds-m-top_medium">
+                    <p><b>City:</b> {weatherData.city}</p>
+                    <p><b>Temperature:</b> {weatherData.temp} °C</p>
+                    <p><b>Condition:</b> {weatherData.condition}</p>
+                </div>
             </template>
+            <template if:false={weatherData}>
+    <p>No data yet</p>
+</template>
 
         </div>
     </lightning-card>
