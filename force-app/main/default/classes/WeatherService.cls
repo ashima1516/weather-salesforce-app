@@ -10,7 +10,7 @@
 //         Http http = new Http();
 //         HttpRequest req = new HttpRequest();
 
-//       String endpoint = 'callout:Weather_API/v1/current.json?key=0d111258d4844249a0b11074426270&q=' + city;
+//       String endpoint = 'callout:Weather_API/v1/current.json?key=0d111258d4844249a0b110744262703&q=' + city;
 
 //         req.setEndpoint(endpoint);
 //         req.setMethod('GET');
@@ -36,7 +36,7 @@ public with sharing class WeatherService {
         Http http = new Http();
         HttpRequest req = new HttpRequest();
 
-        String endpoint = 'callout:Weather_API/v1/current.json?key=0d111258d4844249a0b11074426270&q=' + city;
+        String endpoint = 'callout:Weather_API/v1/current.json?key=0d111258d4844249a0b110744262703&q=' + city;
 
         req.setEndpoint(endpoint);
         req.setMethod('GET');
